@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Interface</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: #4CAF50;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        table th, table td {
+            padding: 0px 10px;
+            text-align: left;
+           
+        }
+
+        table th {
+            background-color: #f2f2f2;
+        }
+
+        form {
+            margin-bottom: 20px;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        form input, form textarea, form button, form select {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        form button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #45a049;
+        }
+
+        #message-response {
+            margin-top: 10px;
+            color: #4CAF50;
+        }
+
+        #status-container {
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Messaging Admin Interface</h1>
+
+        <!-- Send Test Message -->
+        <section>
+            <h2>Send a message</h2>
+            <form id="test-message-form" method="post" action="{% url 'reply_to_user' %}">
+                {% csrf_token %}
+                
+                <label for="receiver">Receiver:</label>
+                <div class="dropdown">
+                    <button type="button">Select Receivers</button>
+                    <div class="dropdown-content">
+                        <table >
+                            {% for message in mobile_dict %}
+                            <tr>
+                                <td>
+                                    {{ message.mobile_no }} 
+                                </td>
+                                <td>
+                                    <input type="checkbox" name="mobile" value="{{ message.mobile_no }}">
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </table>
+                        <!-- {% for message in messages %}
+                            <label>
+                                <input type="checkbox" name="mobile" value="{{ message.mobile_no }}">
+                                 {{ message.mobile_no }}
+                            </label>
+                        {% endfor %} -->
+                    </div>
+                </div>
+            
+                <input type="hidden" name="mobile" id="hidden-mobile-input"> <!-- Hidden input to store selected values -->
+            
+                <label for="content">Message:</label>
+                <textarea id="content" name="msg" required></textarea>
+            
+                <button type="submit" id="send-message-btn">Send Message</button>
+            </form>
+            
+            <div id="message-response"></div>
+        </section>
+
+        <!-- View Messages -->
+        <section>
+            <h2>View messages</h2>
+            <table style="border: 1px solid black;border-collapse: collapse;">
+                <thead>
+                    <tr style="border: 2px solid black;border-collapse: collapse;">
+                        <th style="border: 1px solid black;border-collapse: collapse;">Sender</th>
+                        <th style="border: 1px solid black;border-collapse: collapse;">Receiver</th>
+                        <th style="border: 1px solid black;border-collapse: collapse;">Content</th>
+                        <th style="border: 1px solid black;border-collapse: collapse;">Timestamp</th>
+                        <th style="border: 1px solid black;border-collapse: collapse;">Status</th>
+                    </tr>
+                </thead>
+                <tbody style="border: 1px solid black;border-collapse: collapse;">
+                    {% for message in messages %}
+                    <tr style="border: 1px solid black;border-collapse: collapse;">
+                        <td >{{ message.sender }}</td>
+                        <td style="border: 1px solid black;border-collapse: collapse;">{{ message.receiver }}</td>
+                        <td style="border: 1px solid black;border-collapse: collapse;">{{ message.content }}</td>
+                        <td style="border: 1px solid black;border-collapse: collapse;">{{ message.timestamp }}</td>
+                        <td style="border: 1px solid black;border-collapse: collapse;">{{ message.status }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Monitor Message Status -->
+        <section>
+            <h2>Monitor Message Status</h2>
+            <div id="status-container">
+                <!-- Status updates will be dynamically inserted here -->
+            </div>
+        </section>
+    </div>
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+    const dropdownButton = document.querySelector('.dropdown button');
+    const dropdownContent = document.querySelector('.dropdown-content');
+    const checkboxes = document.querySelectorAll('.dropdown-content input[type="checkbox"]');
+    const hiddenMobileInput = document.getElementById('hidden-mobile-input');
+    
+    // Toggle dropdown visibility
+    dropdownButton.addEventListener('click', function() {
+        dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+    });
+
+    // Close dropdown if clicked outside
+    document.addEventListener('click', function(event) {
+        if (!dropdownButton.contains(event.target) && !dropdownContent.contains(event.target)) {
+            dropdownContent.style.display = 'none';
+        }
+    });
+
+    // Collect selected values but do not show on the UI
+    function updateHiddenInput() {
+        const selectedValues = [];
+        checkboxes.forEach(function(checkbox) {
+            if (checkbox.checked) {
+                selectedValues.push(checkbox.value);
+            }
+        });
+        hiddenMobileInput.value = selectedValues.join(","); // Update hidden input with selected values
+    }
+
+    // Attach event listeners to checkboxes to update hidden input
+    checkboxes.forEach(function(checkbox) {
+        checkbox.addEventListener('change', updateHiddenInput);
+        });
+    });
+        // JavaScript for handling message send actions
+
+        document.getElementById("send-message-btn").addEventListener("click", function (e) {
+    e.preventDefault(); // Prevent the form from submitting normally
+
+    // Collect selected mobile numbers
+    const selectedMobiles = Array.from(document.querySelectorAll("input[name='mobile']:checked"))
+        .map(checkbox => checkbox.value);
+
+    const content = document.getElementById("content").value;
+
+    if (selectedMobiles.length === 0 || !content) {
+        alert("Please select at least one receiver and fill in the message.");
+        return;
+    }
+
+    // Simulate API Call
+    fetch("{% url 'reply_to_user' %}", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+            "X-CSRFToken": "{{ csrf_token }}"
+        },
+        body: JSON.stringify({
+            mobile: selectedMobiles.join(","), // Send the selected mobiles as a comma-separated string
+            msg: content
+        })
+    })
+    .then(response => response.json())
+    .then(data => {
+        const responseDiv = document.getElementById("message-response");
+        if (data.status === "success") {
+            responseDiv.textContent = "Message sent successfully!";
+        } else {
+            responseDiv.textContent = "Failed to send message.";
+        }
+    })
+    .catch(error => {
+        console.error("Error:", error);
+    });
+});
+    </script>
+</body>
+</html>
