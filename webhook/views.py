@@ -1,5 +1,6 @@
 import json
 import logging
+import os
 from datetime import datetime
 from functools import wraps
 from django.http import JsonResponse, HttpResponse
@@ -11,6 +12,26 @@ from rest_framework.decorators import api_view
 from webhook.service import WhatsAppService
 import asyncio  # For async features
 
+
+
+# Configure logging to log to a file and console
+logger = logging.getLogger(__name__)
+ 
+log_directory = 'logs'
+if not os.path.exists(log_directory):
+    os.makedirs(log_directory)
+
+file_handler = logging.FileHandler(f'{log_directory}/app.log')
+console_handler = logging.StreamHandler()
+ 
+formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+file_handler.setFormatter(formatter)
+console_handler.setFormatter(formatter)
+ 
+logger.addHandler(file_handler)
+logger.addHandler(console_handler)
+ 
+logger.setLevel(logging.DEBUG)
 # This is the token you set up in your Meta Developer Console
 VERIFY_TOKEN = "get_verify"  # Replace with your actual token
 
@@ -18,28 +39,6 @@ VERIFY_TOKEN = "get_verify"  # Replace with your actual token
 logger = logging.getLogger(__name__)
 
 
-
-
-
-
-def asyncapi_view(http_method_names=None):
-    def decorator(view_func):
-        @wraps(view_func)
-        async def _wrapped_view(request, *args, **kwargs):
-            try:
-                # Call the async view function and await its result
-                result = await view_func(request, *args, **kwargs)
-                # Ensure the result is a valid Response object
-                if isinstance(result, Response):
-                    return result
-                elif isinstance(result, dict):
-                    return JsonResponse(result)
-                else:
-                    raise TypeError("View must return a Response or dict.")
-            except Exception as e:
-                return JsonResponse({"error": str(e)}, status=500)
-        return _wrapped_view
-    return decorator
 
 @csrf_exempt
 async def webhook(request):
