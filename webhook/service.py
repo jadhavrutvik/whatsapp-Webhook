@@ -1,6 +1,9 @@
 import httpx
 import logging
 import os
+from webhook.models import Message
+import asyncio
+from datetime import datetime
 
 
 
@@ -27,7 +30,7 @@ logger = logging.getLogger(__name__)
 
 class WhatsAppService:
     BASE_URL = "https://graph.facebook.com/v14.0/551602171364742/messages"
-    ACCESS_TOKEN = "EAAPp0EdFjMYBO1mZBX9tEZCGCtFyR5oDbOJg8fAZAX8QG1MmrcB6LlzIrusp8nqKe73M2yH1B9FLncCwrGTi7bgRshBXQ39414uoUqp2SUA6FVLzZBvLUS4yGKxuxJ1m9b01CgZBBYTmR6IuNZBeoXBLCrS3m8YcxPEiIcF8begrmkF0aPvfMw48OYicHk3K5WP0dDtOKIXoPsE4mynVHjoV9sZBPoZD"
+    ACCESS_TOKEN = "EAAPp0EdFjMYBOyzS2CDl4vdNODJh99EaEGq6kx13ObS48lbDRpnsvDtOxigXpMYj2YhAcMqkblNJ2OKSYsHZCbIunbY8IdFJM7qdAlHdTrnjgiKKpaTTaTKT8CFC0zjLt9yXM3lAGypWLwcfk1xF0WfHXWf2ZAG6Do46CPxamJsw3fowSCKVmksC3sZClibkbZBGZBZCR6g1zOpymJAOCzZAVIR9lYZD"
 
     def __init__(self):
         self.headers = {
@@ -53,12 +56,22 @@ class WhatsAppService:
             async with httpx.AsyncClient() as client:
                 response = await client.post(self.BASE_URL, json=payload, headers=self.headers)
             print(response.json())
+            timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+            await asyncio.to_thread(
+                                Message.objects.create,
+                                sender="Rutvik",
+                                receiver=mobile_no,
+                                content=message,
+                                timestamp=timestamp,
+                                status="Sent",
+                            )
             if response.status_code == 200:
                 logger.info(f"Message successfully sent to {mobile_no}")
                 return True, response.json()  # Returns a tuple of success and response data
             else:
                 logger.error(f"Failed to send message: {response.text}")
                 return False, response.json()
+            
 
         except Exception as e:
             logger.exception("An error occurred while sending the message.")

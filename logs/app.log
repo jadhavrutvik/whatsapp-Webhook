@@ -573,3 +573,2218 @@
 }
 2024-12-24 15:46:12,023 - webhook.views - INFO - Mobile_no 919322015008 already exists. Adding other details.
 2024-12-24 15:46:12,067 - webhook.views - INFO - Received message from 919322015008: Aye at 2024-12-24 10:16:11
+2024-12-24 15:57:18,075 - webhook.views - INFO - Received message data: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "457525804121298",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15551828990",
+              "phone_number_id": "551602171364742"
+            },
+            "contacts": [
+              {
+                "profile": {
+                  "name": "Rutvik Jadhav"
+                },
+                "wa_id": "918265057464"
+              }
+            ],
+            "messages": [
+              {
+                "from": "918265057464",
+                "id": "wamid.HBgMOTE4MjY1MDU3NDY0FQIAEhggODI2NkQ3Q0M0MTBGRjY4MzEwNzkzOTMyRDc4MjU3MUUA",
+                "timestamp": "1735036024",
+                "text": {
+                  "body": "Hii"
+                },
+                "type": "text"
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+2024-12-24 15:57:18,102 - webhook.views - INFO - Mobile_no 918265057464 already exists. Adding other details.
+2024-12-24 15:57:18,119 - webhook.views - ERROR - Error processing incoming message.
+Traceback (most recent call last):
+  File "D:\projects\Web Hook\whatsapp_webhook\webhook\views.py", line 103, in webhook
+    admin_interface()
+TypeError: admin_interface() missing 1 required positional argument: 'request'
+2024-12-24 15:57:18,213 - webhook.views - INFO - Received message data: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "457525804121298",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15551828990",
+              "phone_number_id": "551602171364742"
+            },
+            "statuses": [
+              {
+                "id": "wamid.HBgMOTE4MjY1MDU3NDY0FQIAERgSRDlFNzE5NjAxMzU5NUE2N0Q5AA==",
+                "status": "read",
+                "timestamp": "1735036022",
+                "recipient_id": "918265057464"
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+2024-12-24 15:57:18,226 - webhook.views - INFO - Received message data: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "457525804121298",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15551828990",
+              "phone_number_id": "551602171364742"
+            },
+            "statuses": [
+              {
+                "id": "wamid.HBgMOTE4MjY1MDU3NDY0FQIAERgSMzRFNjc5OTc3RUZENTA2NUJBAA==",
+                "status": "read",
+                "timestamp": "1735036022",
+                "recipient_id": "918265057464"
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+2024-12-24 15:57:18,258 - webhook.views - INFO - Received message data: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "457525804121298",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15551828990",
+              "phone_number_id": "551602171364742"
+            },
+            "statuses": [
+              {
+                "id": "wamid.HBgMOTE4MjY1MDU3NDY0FQIAERgSODVFMjE4RUNENDExMkY5RDRBAA==",
+                "status": "read",
+                "timestamp": "1735036022",
+                "recipient_id": "918265057464"
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+2024-12-24 15:57:18,822 - webhook.views - INFO - Received message data: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "457525804121298",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15551828990",
+              "phone_number_id": "551602171364742"
+            },
+            "contacts": [
+              {
+                "profile": {
+                  "name": "Rutvik Jadhav"
+                },
+                "wa_id": "918265057464"
+              }
+            ],
+            "messages": [
+              {
+                "from": "918265057464",
+                "id": "wamid.HBgMOTE4MjY1MDU3NDY0FQIAEhggODI2NkQ3Q0M0MTBGRjY4MzEwNzkzOTMyRDc4MjU3MUUA",
+                "timestamp": "1735036024",
+                "text": {
+                  "body": "Hii"
+                },
+                "type": "text"
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+2024-12-24 15:57:18,840 - webhook.views - INFO - Mobile_no 918265057464 already exists. Adding other details.
+2024-12-24 15:57:18,855 - webhook.views - ERROR - Error processing incoming message.
+Traceback (most recent call last):
+  File "D:\projects\Web Hook\whatsapp_webhook\webhook\views.py", line 103, in webhook
+    admin_interface()
+TypeError: admin_interface() missing 1 required positional argument: 'request'
+2024-12-24 15:57:20,937 - webhook.views - INFO - Received message data: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "457525804121298",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15551828990",
+              "phone_number_id": "551602171364742"
+            },
+            "contacts": [
+              {
+                "profile": {
+                  "name": "Rutvik Jadhav"
+                },
+                "wa_id": "918265057464"
+              }
+            ],
+            "messages": [
+              {
+                "from": "918265057464",
+                "id": "wamid.HBgMOTE4MjY1MDU3NDY0FQIAEhggODI2NkQ3Q0M0MTBGRjY4MzEwNzkzOTMyRDc4MjU3MUUA",
+                "timestamp": "1735036024",
+                "text": {
+                  "body": "Hii"
+                },
+                "type": "text"
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+2024-12-24 15:57:20,954 - webhook.views - INFO - Mobile_no 918265057464 already exists. Adding other details.
+2024-12-24 15:57:20,963 - webhook.views - ERROR - Error processing incoming message.
+Traceback (most recent call last):
+  File "D:\projects\Web Hook\whatsapp_webhook\webhook\views.py", line 103, in webhook
+    admin_interface()
+TypeError: admin_interface() missing 1 required positional argument: 'request'
+2024-12-24 15:57:45,872 - webhook.views - INFO - Received message data: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "457525804121298",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15551828990",
+              "phone_number_id": "551602171364742"
+            },
+            "contacts": [
+              {
+                "profile": {
+                  "name": "Rutvik Jadhav"
+                },
+                "wa_id": "918265057464"
+              }
+            ],
+            "messages": [
+              {
+                "from": "918265057464",
+                "id": "wamid.HBgMOTE4MjY1MDU3NDY0FQIAEhggODI2NkQ3Q0M0MTBGRjY4MzEwNzkzOTMyRDc4MjU3MUUA",
+                "timestamp": "1735036024",
+                "text": {
+                  "body": "Hii"
+                },
+                "type": "text"
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+2024-12-24 15:57:45,883 - webhook.views - INFO - Mobile_no 918265057464 already exists. Adding other details.
+2024-12-24 15:57:45,901 - webhook.views - ERROR - Error processing incoming message.
+Traceback (most recent call last):
+  File "D:\projects\Web Hook\whatsapp_webhook\webhook\views.py", line 103, in webhook
+    admin_interface()
+TypeError: admin_interface() missing 1 required positional argument: 'request'
+2024-12-24 16:04:43,478 - webhook.views - INFO - Received message data: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "457525804121298",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15551828990",
+              "phone_number_id": "551602171364742"
+            },
+            "contacts": [
+              {
+                "profile": {
+                  "name": "Rutvik Jadhav"
+                },
+                "wa_id": "918265057464"
+              }
+            ],
+            "messages": [
+              {
+                "from": "918265057464",
+                "id": "wamid.HBgMOTE4MjY1MDU3NDY0FQIAEhggODI2NkQ3Q0M0MTBGRjY4MzEwNzkzOTMyRDc4MjU3MUUA",
+                "timestamp": "1735036024",
+                "text": {
+                  "body": "Hii"
+                },
+                "type": "text"
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+2024-12-24 16:04:43,483 - webhook.views - INFO - Mobile_no 918265057464 already exists. Adding other details.
+2024-12-24 16:04:43,507 - webhook.views - ERROR - Error processing incoming message.
+Traceback (most recent call last):
+  File "D:\projects\Web Hook\whatsapp_webhook\webhook\views.py", line 103, in webhook
+    exists = await asyncio.to_thread(
+TypeError: View.as_view.<locals>.view() missing 1 required positional argument: 'request'
+2024-12-24 16:05:03,438 - webhook.views - INFO - Received message data: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "457525804121298",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15551828990",
+              "phone_number_id": "551602171364742"
+            },
+            "contacts": [
+              {
+                "profile": {
+                  "name": "Rutvik Jadhav"
+                },
+                "wa_id": "918265057464"
+              }
+            ],
+            "messages": [
+              {
+                "from": "918265057464",
+                "id": "wamid.HBgMOTE4MjY1MDU3NDY0FQIAEhggNkQwMTAyNkE5MDQ4RDJBRkFDMUZCQTEyNUExMjRCN0QA",
+                "timestamp": "1735036502",
+                "text": {
+                  "body": "My name is rutvik"
+                },
+                "type": "text"
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+2024-12-24 16:05:03,446 - webhook.views - INFO - Mobile_no 918265057464 already exists. Adding other details.
+2024-12-24 16:05:03,469 - webhook.views - ERROR - Error processing incoming message.
+Traceback (most recent call last):
+  File "D:\projects\Web Hook\whatsapp_webhook\webhook\views.py", line 128, in webhook
+    admin_interface()
+TypeError: View.as_view.<locals>.view() missing 1 required positional argument: 'request'
+2024-12-24 16:05:04,233 - webhook.views - INFO - Received message data: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "457525804121298",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15551828990",
+              "phone_number_id": "551602171364742"
+            },
+            "contacts": [
+              {
+                "profile": {
+                  "name": "Rutvik Jadhav"
+                },
+                "wa_id": "918265057464"
+              }
+            ],
+            "messages": [
+              {
+                "from": "918265057464",
+                "id": "wamid.HBgMOTE4MjY1MDU3NDY0FQIAEhggNkQwMTAyNkE5MDQ4RDJBRkFDMUZCQTEyNUExMjRCN0QA",
+                "timestamp": "1735036502",
+                "text": {
+                  "body": "My name is rutvik"
+                },
+                "type": "text"
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+2024-12-24 16:05:04,242 - webhook.views - INFO - Mobile_no 918265057464 already exists. Adding other details.
+2024-12-24 16:05:04,262 - webhook.views - ERROR - Error processing incoming message.
+Traceback (most recent call last):
+  File "D:\projects\Web Hook\whatsapp_webhook\webhook\views.py", line 128, in webhook
+    admin_interface()
+TypeError: View.as_view.<locals>.view() missing 1 required positional argument: 'request'
+2024-12-24 16:05:05,111 - webhook.views - INFO - Received message data: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "457525804121298",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15551828990",
+              "phone_number_id": "551602171364742"
+            },
+            "contacts": [
+              {
+                "profile": {
+                  "name": "Rutvik Jadhav"
+                },
+                "wa_id": "918265057464"
+              }
+            ],
+            "messages": [
+              {
+                "from": "918265057464",
+                "id": "wamid.HBgMOTE4MjY1MDU3NDY0FQIAEhggNkQwMTAyNkE5MDQ4RDJBRkFDMUZCQTEyNUExMjRCN0QA",
+                "timestamp": "1735036502",
+                "text": {
+                  "body": "My name is rutvik"
+                },
+                "type": "text"
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+2024-12-24 16:05:05,126 - webhook.views - INFO - Mobile_no 918265057464 already exists. Adding other details.
+2024-12-24 16:05:05,152 - webhook.views - ERROR - Error processing incoming message.
+Traceback (most recent call last):
+  File "D:\projects\Web Hook\whatsapp_webhook\webhook\views.py", line 128, in webhook
+    admin_interface()
+TypeError: View.as_view.<locals>.view() missing 1 required positional argument: 'request'
+2024-12-24 16:05:07,302 - webhook.views - INFO - Received message data: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "457525804121298",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15551828990",
+              "phone_number_id": "551602171364742"
+            },
+            "contacts": [
+              {
+                "profile": {
+                  "name": "Rutvik Jadhav"
+                },
+                "wa_id": "918265057464"
+              }
+            ],
+            "messages": [
+              {
+                "from": "918265057464",
+                "id": "wamid.HBgMOTE4MjY1MDU3NDY0FQIAEhggNkQwMTAyNkE5MDQ4RDJBRkFDMUZCQTEyNUExMjRCN0QA",
+                "timestamp": "1735036502",
+                "text": {
+                  "body": "My name is rutvik"
+                },
+                "type": "text"
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+2024-12-24 16:05:07,313 - webhook.views - INFO - Mobile_no 918265057464 already exists. Adding other details.
+2024-12-24 16:05:07,329 - webhook.views - ERROR - Error processing incoming message.
+Traceback (most recent call last):
+  File "D:\projects\Web Hook\whatsapp_webhook\webhook\views.py", line 128, in webhook
+    admin_interface()
+TypeError: View.as_view.<locals>.view() missing 1 required positional argument: 'request'
+2024-12-24 16:05:32,013 - webhook.views - INFO - Received message data: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "457525804121298",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15551828990",
+              "phone_number_id": "551602171364742"
+            },
+            "contacts": [
+              {
+                "profile": {
+                  "name": "Rutvik Jadhav"
+                },
+                "wa_id": "918265057464"
+              }
+            ],
+            "messages": [
+              {
+                "from": "918265057464",
+                "id": "wamid.HBgMOTE4MjY1MDU3NDY0FQIAEhggNkQwMTAyNkE5MDQ4RDJBRkFDMUZCQTEyNUExMjRCN0QA",
+                "timestamp": "1735036502",
+                "text": {
+                  "body": "My name is rutvik"
+                },
+                "type": "text"
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+2024-12-24 16:05:32,023 - webhook.views - INFO - Mobile_no 918265057464 already exists. Adding other details.
+2024-12-24 16:05:32,042 - webhook.views - ERROR - Error processing incoming message.
+Traceback (most recent call last):
+  File "D:\projects\Web Hook\whatsapp_webhook\webhook\views.py", line 125, in webhook
+    admin_interface()
+TypeError: View.as_view.<locals>.view() missing 1 required positional argument: 'request'
+2024-12-24 16:06:27,407 - webhook.views - INFO - Received message data: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "457525804121298",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15551828990",
+              "phone_number_id": "551602171364742"
+            },
+            "contacts": [
+              {
+                "profile": {
+                  "name": "Rutvik Jadhav"
+                },
+                "wa_id": "918265057464"
+              }
+            ],
+            "messages": [
+              {
+                "from": "918265057464",
+                "id": "wamid.HBgMOTE4MjY1MDU3NDY0FQIAEhggNkRGNjcyNjc1RkY2RjBDNkZFNjhBQzZCMjZBNEZDRTgA",
+                "timestamp": "1735036586",
+                "text": {
+                  "body": "My name is rahul"
+                },
+                "type": "text"
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+2024-12-24 16:06:27,416 - webhook.views - INFO - Mobile_no 918265057464 already exists. Adding other details.
+2024-12-24 16:06:27,442 - webhook.views - ERROR - Error processing incoming message.
+Traceback (most recent call last):
+  File "D:\projects\Web Hook\whatsapp_webhook\webhook\views.py", line 125, in webhook
+    get_messages_data()
+  File "D:\projects\Web Hook\whatsapp_webhook\webhook\views.py", line 48, in get_messages_data
+    for message in messages:
+  File "C:\Users\Rutvik Jadhav\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 400, in __iter__
+    self._fetch_all()
+  File "C:\Users\Rutvik Jadhav\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\Rutvik Jadhav\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\Rutvik Jadhav\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1560, in execute_sql
+    cursor = self.connection.cursor()
+  File "C:\Users\Rutvik Jadhav\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\asyncio.py", line 24, in inner
+    raise SynchronousOnlyOperation(message)
+django.core.exceptions.SynchronousOnlyOperation: You cannot call this from an async context - use a thread or sync_to_async.
+2024-12-24 16:06:28,422 - webhook.views - INFO - Received message data: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "457525804121298",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15551828990",
+              "phone_number_id": "551602171364742"
+            },
+            "contacts": [
+              {
+                "profile": {
+                  "name": "Rutvik Jadhav"
+                },
+                "wa_id": "918265057464"
+              }
+            ],
+            "messages": [
+              {
+                "from": "918265057464",
+                "id": "wamid.HBgMOTE4MjY1MDU3NDY0FQIAEhggNkRGNjcyNjc1RkY2RjBDNkZFNjhBQzZCMjZBNEZDRTgA",
+                "timestamp": "1735036586",
+                "text": {
+                  "body": "My name is rahul"
+                },
+                "type": "text"
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+2024-12-24 16:06:28,438 - webhook.views - INFO - Mobile_no 918265057464 already exists. Adding other details.
+2024-12-24 16:06:28,450 - webhook.views - ERROR - Error processing incoming message.
+Traceback (most recent call last):
+  File "D:\projects\Web Hook\whatsapp_webhook\webhook\views.py", line 125, in webhook
+    get_messages_data()
+  File "D:\projects\Web Hook\whatsapp_webhook\webhook\views.py", line 48, in get_messages_data
+    for message in messages:
+  File "C:\Users\Rutvik Jadhav\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 400, in __iter__
+    self._fetch_all()
+  File "C:\Users\Rutvik Jadhav\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\Rutvik Jadhav\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\Rutvik Jadhav\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1560, in execute_sql
+    cursor = self.connection.cursor()
+  File "C:\Users\Rutvik Jadhav\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\asyncio.py", line 24, in inner
+    raise SynchronousOnlyOperation(message)
+django.core.exceptions.SynchronousOnlyOperation: You cannot call this from an async context - use a thread or sync_to_async.
+2024-12-24 16:06:29,342 - webhook.views - INFO - Received message data: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "457525804121298",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15551828990",
+              "phone_number_id": "551602171364742"
+            },
+            "contacts": [
+              {
+                "profile": {
+                  "name": "Rutvik Jadhav"
+                },
+                "wa_id": "918265057464"
+              }
+            ],
+            "messages": [
+              {
+                "from": "918265057464",
+                "id": "wamid.HBgMOTE4MjY1MDU3NDY0FQIAEhggNkRGNjcyNjc1RkY2RjBDNkZFNjhBQzZCMjZBNEZDRTgA",
+                "timestamp": "1735036586",
+                "text": {
+                  "body": "My name is rahul"
+                },
+                "type": "text"
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+2024-12-24 16:06:29,359 - webhook.views - INFO - Mobile_no 918265057464 already exists. Adding other details.
+2024-12-24 16:06:29,371 - webhook.views - ERROR - Error processing incoming message.
+Traceback (most recent call last):
+  File "D:\projects\Web Hook\whatsapp_webhook\webhook\views.py", line 125, in webhook
+    get_messages_data()
+  File "D:\projects\Web Hook\whatsapp_webhook\webhook\views.py", line 48, in get_messages_data
+    for message in messages:
+  File "C:\Users\Rutvik Jadhav\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 400, in __iter__
+    self._fetch_all()
+  File "C:\Users\Rutvik Jadhav\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\Rutvik Jadhav\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\Rutvik Jadhav\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1560, in execute_sql
+    cursor = self.connection.cursor()
+  File "C:\Users\Rutvik Jadhav\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\asyncio.py", line 24, in inner
+    raise SynchronousOnlyOperation(message)
+django.core.exceptions.SynchronousOnlyOperation: You cannot call this from an async context - use a thread or sync_to_async.
+2024-12-24 16:06:31,698 - webhook.views - INFO - Received message data: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "457525804121298",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15551828990",
+              "phone_number_id": "551602171364742"
+            },
+            "contacts": [
+              {
+                "profile": {
+                  "name": "Rutvik Jadhav"
+                },
+                "wa_id": "918265057464"
+              }
+            ],
+            "messages": [
+              {
+                "from": "918265057464",
+                "id": "wamid.HBgMOTE4MjY1MDU3NDY0FQIAEhggNkRGNjcyNjc1RkY2RjBDNkZFNjhBQzZCMjZBNEZDRTgA",
+                "timestamp": "1735036586",
+                "text": {
+                  "body": "My name is rahul"
+                },
+                "type": "text"
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+2024-12-24 16:06:31,717 - webhook.views - INFO - Mobile_no 918265057464 already exists. Adding other details.
+2024-12-24 16:06:31,737 - webhook.views - ERROR - Error processing incoming message.
+Traceback (most recent call last):
+  File "D:\projects\Web Hook\whatsapp_webhook\webhook\views.py", line 125, in webhook
+    get_messages_data()
+  File "D:\projects\Web Hook\whatsapp_webhook\webhook\views.py", line 48, in get_messages_data
+    for message in messages:
+  File "C:\Users\Rutvik Jadhav\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 400, in __iter__
+    self._fetch_all()
+  File "C:\Users\Rutvik Jadhav\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\Rutvik Jadhav\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\Rutvik Jadhav\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1560, in execute_sql
+    cursor = self.connection.cursor()
+  File "C:\Users\Rutvik Jadhav\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\asyncio.py", line 24, in inner
+    raise SynchronousOnlyOperation(message)
+django.core.exceptions.SynchronousOnlyOperation: You cannot call this from an async context - use a thread or sync_to_async.
+2024-12-24 16:06:55,776 - webhook.views - INFO - Received message data: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "457525804121298",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15551828990",
+              "phone_number_id": "551602171364742"
+            },
+            "contacts": [
+              {
+                "profile": {
+                  "name": "Rutvik Jadhav"
+                },
+                "wa_id": "918265057464"
+              }
+            ],
+            "messages": [
+              {
+                "from": "918265057464",
+                "id": "wamid.HBgMOTE4MjY1MDU3NDY0FQIAEhggNkRGNjcyNjc1RkY2RjBDNkZFNjhBQzZCMjZBNEZDRTgA",
+                "timestamp": "1735036586",
+                "text": {
+                  "body": "My name is rahul"
+                },
+                "type": "text"
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+2024-12-24 16:06:55,786 - webhook.views - INFO - Mobile_no 918265057464 already exists. Adding other details.
+2024-12-24 16:06:55,807 - webhook.views - ERROR - Error processing incoming message.
+Traceback (most recent call last):
+  File "D:\projects\Web Hook\whatsapp_webhook\webhook\views.py", line 125, in webhook
+    get_messages_data()
+  File "D:\projects\Web Hook\whatsapp_webhook\webhook\views.py", line 48, in get_messages_data
+    for message in messages:
+  File "C:\Users\Rutvik Jadhav\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 400, in __iter__
+    self._fetch_all()
+  File "C:\Users\Rutvik Jadhav\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\Rutvik Jadhav\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\Rutvik Jadhav\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1560, in execute_sql
+    cursor = self.connection.cursor()
+  File "C:\Users\Rutvik Jadhav\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\asyncio.py", line 24, in inner
+    raise SynchronousOnlyOperation(message)
+django.core.exceptions.SynchronousOnlyOperation: You cannot call this from an async context - use a thread or sync_to_async.
+2024-12-24 16:08:12,150 - webhook.views - INFO - Calling send_message function asynchronously
+2024-12-24 16:08:12,151 - webhook.views - INFO - Preparing to send message to: 918265057464
+2024-12-24 16:08:12,152 - webhook.service - INFO - Sending message to +918265057464: hi
+
+2024-12-24 16:08:13,271 - webhook.service - INFO - Message successfully sent to +918265057464
+2024-12-24 16:08:14,141 - webhook.views - INFO - Received message data: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "457525804121298",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15551828990",
+              "phone_number_id": "551602171364742"
+            },
+            "statuses": [
+              {
+                "id": "wamid.HBgMOTE4MjY1MDU3NDY0FQIAERgSMzMxQzdGNDkwMTM2OTM4MkVEAA==",
+                "status": "sent",
+                "timestamp": "1735036693",
+                "recipient_id": "918265057464",
+                "conversation": {
+                  "id": "6bf4c358fc3f286834e3d51b9b818bc1",
+                  "expiration_timestamp": "1735117800",
+                  "origin": {
+                    "type": "service"
+                  }
+                },
+                "pricing": {
+                  "billable": true,
+                  "pricing_model": "CBP",
+                  "category": "service"
+                }
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+2024-12-24 16:08:16,038 - webhook.views - INFO - Received message data: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "457525804121298",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15551828990",
+              "phone_number_id": "551602171364742"
+            },
+            "statuses": [
+              {
+                "id": "wamid.HBgMOTE4MjY1MDU3NDY0FQIAERgSMzMxQzdGNDkwMTM2OTM4MkVEAA==",
+                "status": "read",
+                "timestamp": "1735036695",
+                "recipient_id": "918265057464",
+                "conversation": {
+                  "id": "6bf4c358fc3f286834e3d51b9b818bc1",
+                  "origin": {
+                    "type": "service"
+                  }
+                },
+                "pricing": {
+                  "billable": true,
+                  "pricing_model": "CBP",
+                  "category": "service"
+                }
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+2024-12-24 16:08:33,007 - webhook.views - INFO - Calling send_message function asynchronously
+2024-12-24 16:08:33,008 - webhook.views - INFO - Preparing to send message to: 919322015008
+2024-12-24 16:08:33,008 - webhook.service - INFO - Sending message to +919322015008: 
+ky hoty msg kela tr
+2024-12-24 16:08:35,075 - webhook.service - INFO - Message successfully sent to +919322015008
+2024-12-24 16:08:35,926 - webhook.views - INFO - Received message data: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "457525804121298",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15551828990",
+              "phone_number_id": "551602171364742"
+            },
+            "statuses": [
+              {
+                "id": "wamid.HBgMOTE5MzIyMDE1MDA4FQIAERgSMTExMEUyN0U2MDM2NURDMzg0AA==",
+                "status": "sent",
+                "timestamp": "1735036715",
+                "recipient_id": "919322015008",
+                "conversation": {
+                  "id": "010d5357111a9c653f36f6120e6fd127",
+                  "expiration_timestamp": "1735118160",
+                  "origin": {
+                    "type": "service"
+                  }
+                },
+                "pricing": {
+                  "billable": true,
+                  "pricing_model": "CBP",
+                  "category": "service"
+                }
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+2024-12-24 16:08:51,904 - webhook.views - INFO - Received message data: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "457525804121298",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15551828990",
+              "phone_number_id": "551602171364742"
+            },
+            "contacts": [
+              {
+                "profile": {
+                  "name": "Rutvik Jadhav"
+                },
+                "wa_id": "918265057464"
+              }
+            ],
+            "messages": [
+              {
+                "from": "918265057464",
+                "id": "wamid.HBgMOTE4MjY1MDU3NDY0FQIAEhggNEYwRTgyNjVBRDQ2NjQwOTFCMTgzQTI3RTQ4MDNDNTQA",
+                "timestamp": "1735036730",
+                "text": {
+                  "body": "Styj"
+                },
+                "type": "text"
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+2024-12-24 16:08:51,915 - webhook.views - INFO - Mobile_no 918265057464 already exists. Adding other details.
+2024-12-24 16:08:51,926 - webhook.views - INFO - Received message from 918265057464: Styj at 2024-12-24 10:38:50
+2024-12-24 16:11:10,138 - webhook.views - INFO - Received message data: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "457525804121298",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15551828990",
+              "phone_number_id": "551602171364742"
+            },
+            "statuses": [
+              {
+                "id": "wamid.HBgMOTE5MzIyMDE1MDA4FQIAERgSMTExMEUyN0U2MDM2NURDMzg0AA==",
+                "status": "delivered",
+                "timestamp": "1735036869",
+                "recipient_id": "919322015008",
+                "conversation": {
+                  "id": "010d5357111a9c653f36f6120e6fd127",
+                  "origin": {
+                    "type": "service"
+                  }
+                },
+                "pricing": {
+                  "billable": true,
+                  "pricing_model": "CBP",
+                  "category": "service"
+                }
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+2024-12-24 16:11:34,461 - webhook.views - INFO - Received message data: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "457525804121298",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15551828990",
+              "phone_number_id": "551602171364742"
+            },
+            "contacts": [
+              {
+                "profile": {
+                  "name": "Rutvik Jadhav"
+                },
+                "wa_id": "918265057464"
+              }
+            ],
+            "messages": [
+              {
+                "from": "918265057464",
+                "id": "wamid.HBgMOTE4MjY1MDU3NDY0FQIAEhggNkQwMTAyNkE5MDQ4RDJBRkFDMUZCQTEyNUExMjRCN0QA",
+                "timestamp": "1735036502",
+                "text": {
+                  "body": "My name is rutvik"
+                },
+                "type": "text"
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+2024-12-24 16:11:34,469 - webhook.views - INFO - Mobile_no 918265057464 already exists. Adding other details.
+2024-12-24 16:11:34,490 - webhook.views - INFO - Received message from 918265057464: My name is rutvik at 2024-12-24 10:35:02
+2024-12-24 16:13:25,915 - webhook.views - INFO - Received message data: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "457525804121298",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15551828990",
+              "phone_number_id": "551602171364742"
+            },
+            "contacts": [
+              {
+                "profile": {
+                  "name": "Rutvik Jadhav"
+                },
+                "wa_id": "918265057464"
+              }
+            ],
+            "messages": [
+              {
+                "from": "918265057464",
+                "id": "wamid.HBgMOTE4MjY1MDU3NDY0FQIAEhggNkRGNjcyNjc1RkY2RjBDNkZFNjhBQzZCMjZBNEZDRTgA",
+                "timestamp": "1735036586",
+                "text": {
+                  "body": "My name is rahul"
+                },
+                "type": "text"
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+2024-12-24 16:13:25,925 - webhook.views - INFO - Mobile_no 918265057464 already exists. Adding other details.
+2024-12-24 16:13:25,945 - webhook.views - INFO - Received message from 918265057464: My name is rahul at 2024-12-24 10:36:26
+2024-12-24 16:18:50,436 - webhook.views - INFO - Calling send_message function asynchronously
+2024-12-24 16:18:50,436 - webhook.views - INFO - Preparing to send message to: 918265057464
+2024-12-24 16:18:50,437 - webhook.service - INFO - Sending message to +918265057464: hi
+2024-12-24 16:18:51,536 - webhook.service - INFO - Message successfully sent to +918265057464
+2024-12-24 16:18:52,266 - webhook.views - INFO - Received message data: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "457525804121298",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15551828990",
+              "phone_number_id": "551602171364742"
+            },
+            "statuses": [
+              {
+                "id": "wamid.HBgMOTE4MjY1MDU3NDY0FQIAERgSRkVBNTJCMTYzMTA3NDlERkQ3AA==",
+                "status": "sent",
+                "timestamp": "1735037331",
+                "recipient_id": "918265057464",
+                "conversation": {
+                  "id": "6bf4c358fc3f286834e3d51b9b818bc1",
+                  "expiration_timestamp": "1735117800",
+                  "origin": {
+                    "type": "service"
+                  }
+                },
+                "pricing": {
+                  "billable": true,
+                  "pricing_model": "CBP",
+                  "category": "service"
+                }
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+2024-12-24 16:18:52,977 - webhook.views - INFO - Received message data: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "457525804121298",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15551828990",
+              "phone_number_id": "551602171364742"
+            },
+            "statuses": [
+              {
+                "id": "wamid.HBgMOTE4MjY1MDU3NDY0FQIAERgSRkVBNTJCMTYzMTA3NDlERkQ3AA==",
+                "status": "read",
+                "timestamp": "1735037331",
+                "recipient_id": "918265057464",
+                "conversation": {
+                  "id": "6bf4c358fc3f286834e3d51b9b818bc1",
+                  "origin": {
+                    "type": "service"
+                  }
+                },
+                "pricing": {
+                  "billable": true,
+                  "pricing_model": "CBP",
+                  "category": "service"
+                }
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+2024-12-24 16:19:04,150 - webhook.views - INFO - Received message data: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "457525804121298",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15551828990",
+              "phone_number_id": "551602171364742"
+            },
+            "contacts": [
+              {
+                "profile": {
+                  "name": "Rutvik Jadhav"
+                },
+                "wa_id": "918265057464"
+              }
+            ],
+            "messages": [
+              {
+                "from": "918265057464",
+                "id": "wamid.HBgMOTE4MjY1MDU3NDY0FQIAEhggMUU1NUU2RUIzMEJDODRDQTFEQkEwRUVFM0Y5RUUxOEUA",
+                "timestamp": "1735037343",
+                "text": {
+                  "body": "La ja wvsjsksk"
+                },
+                "type": "text"
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+2024-12-24 16:19:04,158 - webhook.views - INFO - Mobile_no 918265057464 already exists. Adding other details.
+2024-12-24 16:19:04,180 - webhook.views - INFO - Received message from 918265057464: La ja wvsjsksk at 2024-12-24 10:49:03
+2024-12-24 16:20:09,164 - webhook.views - INFO - Received message data: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "457525804121298",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15551828990",
+              "phone_number_id": "551602171364742"
+            },
+            "contacts": [
+              {
+                "profile": {
+                  "name": "Rutvik Jadhav"
+                },
+                "wa_id": "918265057464"
+              }
+            ],
+            "messages": [
+              {
+                "from": "918265057464",
+                "id": "wamid.HBgMOTE4MjY1MDU3NDY0FQIAEhggOERGM0NDMENEMEI3RjhGRDkwMzJCMkNDNUI0RkY3MTcA",
+                "timestamp": "1735037408",
+                "text": {
+                  "body": "Hii"
+                },
+                "type": "text"
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+2024-12-24 16:20:09,202 - webhook.views - INFO - Received message from 918265057464: Hii at 2024-12-24 10:50:08
+2024-12-24 16:25:42,377 - webhook.views - INFO - Received message data: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "457525804121298",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15551828990",
+              "phone_number_id": "551602171364742"
+            },
+            "contacts": [
+              {
+                "profile": {
+                  "name": "Rutvik Jadhav"
+                },
+                "wa_id": "918265057464"
+              }
+            ],
+            "messages": [
+              {
+                "from": "918265057464",
+                "id": "wamid.HBgMOTE4MjY1MDU3NDY0FQIAEhggRTk5RkRGRTlGNTc4Q0E3MUJEN0Y4MTU2QjMwNjQ3REUA",
+                "timestamp": "1735037741",
+                "text": {
+                  "body": "Giii"
+                },
+                "type": "text"
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+2024-12-24 16:25:42,385 - webhook.views - INFO - Mobile_no 918265057464 already exists. Adding other details.
+2024-12-24 16:25:42,407 - webhook.views - INFO - Received message from 918265057464: Giii at 2024-12-24 10:55:41
+2024-12-24 16:27:07,509 - webhook.views - INFO - Received message data: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "457525804121298",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15551828990",
+              "phone_number_id": "551602171364742"
+            },
+            "contacts": [
+              {
+                "profile": {
+                  "name": "Rutvik Jadhav"
+                },
+                "wa_id": "918265057464"
+              }
+            ],
+            "messages": [
+              {
+                "from": "918265057464",
+                "id": "wamid.HBgMOTE4MjY1MDU3NDY0FQIAEhggMjg3NThBQzU4RERGMjlCQTY2NTk1NzhEQ0RGRkZCRTgA",
+                "timestamp": "1735037826",
+                "text": {
+                  "body": "Tuj"
+                },
+                "type": "text"
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+2024-12-24 16:27:07,520 - webhook.views - INFO - Mobile_no 918265057464 already exists. Adding other details.
+2024-12-24 16:27:07,556 - webhook.views - INFO - Received message from 918265057464: Tuj at 2024-12-24 10:57:06
+2024-12-24 16:29:34,961 - webhook.views - INFO - Received message data: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "457525804121298",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15551828990",
+              "phone_number_id": "551602171364742"
+            },
+            "statuses": [
+              {
+                "id": "wamid.HBgMOTE5MzIyMDE1MDA4FQIAERgSMTExMEUyN0U2MDM2NURDMzg0AA==",
+                "status": "read",
+                "timestamp": "1735037974",
+                "recipient_id": "919322015008"
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+2024-12-24 16:29:43,049 - webhook.views - INFO - Received message data: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "457525804121298",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15551828990",
+              "phone_number_id": "551602171364742"
+            },
+            "contacts": [
+              {
+                "profile": {
+                  "name": "Ashok Wankhede"
+                },
+                "wa_id": "919322015008"
+              }
+            ],
+            "messages": [
+              {
+                "from": "919322015008",
+                "id": "wamid.HBgMOTE5MzIyMDE1MDA4FQIAEhgUM0E0Mzk1QkM2QjhEQTg2NzdERjYA",
+                "timestamp": "1735037981",
+                "text": {
+                  "body": "Kashala karaychay pn evdha"
+                },
+                "type": "text"
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+2024-12-24 16:29:43,078 - webhook.views - INFO - Received message from 919322015008: Kashala karaychay pn evdha at 2024-12-24 10:59:41
+2024-12-24 16:29:50,599 - webhook.views - INFO - Received message data: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "457525804121298",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15551828990",
+              "phone_number_id": "551602171364742"
+            },
+            "contacts": [
+              {
+                "profile": {
+                  "name": "Ashok Wankhede"
+                },
+                "wa_id": "919322015008"
+              }
+            ],
+            "messages": [
+              {
+                "from": "919322015008",
+                "id": "wamid.HBgMOTE5MzIyMDE1MDA4FQIAEhgUM0E1MTU4NTREMERBQ0M2QTVCMEMA",
+                "timestamp": "1735037988",
+                "text": {
+                  "body": "Case ch takin harassment chu"
+                },
+                "type": "text"
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+2024-12-24 16:29:50,614 - webhook.views - INFO - Mobile_no 919322015008 already exists. Adding other details.
+2024-12-24 16:29:50,624 - webhook.views - INFO - Received message from 919322015008: Case ch takin harassment chu at 2024-12-24 10:59:48
+2024-12-24 16:29:51,233 - webhook.views - INFO - Received message data: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "457525804121298",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15551828990",
+              "phone_number_id": "551602171364742"
+            },
+            "contacts": [
+              {
+                "profile": {
+                  "name": "Ashok Wankhede"
+                },
+                "wa_id": "919322015008"
+              }
+            ],
+            "messages": [
+              {
+                "from": "919322015008",
+                "id": "wamid.HBgMOTE5MzIyMDE1MDA4FQIAEhgUM0E4MTFBQjQ1NzhGOTgwOThGNTgA",
+                "timestamp": "1735037989",
+                "text": {
+                  "body": "Chi"
+                },
+                "type": "text"
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+2024-12-24 16:29:51,251 - webhook.views - INFO - Mobile_no 919322015008 already exists. Adding other details.
+2024-12-24 16:29:51,270 - webhook.views - INFO - Received message from 919322015008: Chi at 2024-12-24 10:59:49
+2024-12-24 17:54:50,644 - webhook.views - INFO - Received message data: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "457525804121298",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15551828990",
+              "phone_number_id": "551602171364742"
+            },
+            "contacts": [
+              {
+                "profile": {
+                  "name": "Rutvik Jadhav"
+                },
+                "wa_id": "918265057464"
+              }
+            ],
+            "messages": [
+              {
+                "from": "918265057464",
+                "id": "wamid.HBgMOTE4MjY1MDU3NDY0FQIAEhggODI2NkQ3Q0M0MTBGRjY4MzEwNzkzOTMyRDc4MjU3MUUA",
+                "timestamp": "1735036024",
+                "text": {
+                  "body": "Hii"
+                },
+                "type": "text"
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+2024-12-24 17:54:50,724 - webhook.views - INFO - Received message from 918265057464: Hii at 2024-12-24 10:27:04
+2024-12-24 17:59:56,861 - webhook.views - INFO - Received message data: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "457525804121298",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15551828990",
+              "phone_number_id": "551602171364742"
+            },
+            "statuses": [
+              {
+                "id": "wamid.HBgMOTE4MjY1MDU3NDY0FQIAERgSM0JEQzdGRDZGREE1NkY5NjIxAA==",
+                "status": "sent",
+                "timestamp": "1735043395",
+                "recipient_id": "918265057464",
+                "conversation": {
+                  "id": "6bf4c358fc3f286834e3d51b9b818bc1",
+                  "expiration_timestamp": "1735117800",
+                  "origin": {
+                    "type": "service"
+                  }
+                },
+                "pricing": {
+                  "billable": true,
+                  "pricing_model": "CBP",
+                  "category": "service"
+                }
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+2024-12-24 17:59:58,176 - webhook.views - INFO - Received message data: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "457525804121298",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15551828990",
+              "phone_number_id": "551602171364742"
+            },
+            "statuses": [
+              {
+                "id": "wamid.HBgMOTE4MjY1MDU3NDY0FQIAERgSM0JEQzdGRDZGREE1NkY5NjIxAA==",
+                "status": "delivered",
+                "timestamp": "1735043397",
+                "recipient_id": "918265057464",
+                "conversation": {
+                  "id": "6bf4c358fc3f286834e3d51b9b818bc1",
+                  "origin": {
+                    "type": "service"
+                  }
+                },
+                "pricing": {
+                  "billable": true,
+                  "pricing_model": "CBP",
+                  "category": "service"
+                }
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+2024-12-24 18:57:33,407 - webhook.views - INFO - Received message data: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "457525804121298",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15551828990",
+              "phone_number_id": "551602171364742"
+            },
+            "statuses": [
+              {
+                "id": "wamid.HBgMOTE4MjY1MDU3NDY0FQIAERgSM0JEQzdGRDZGREE1NkY5NjIxAA==",
+                "status": "read",
+                "timestamp": "1735046852",
+                "recipient_id": "918265057464"
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+2024-12-24 18:57:35,437 - webhook.views - INFO - Received message data: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "457525804121298",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15551828990",
+              "phone_number_id": "551602171364742"
+            },
+            "contacts": [
+              {
+                "profile": {
+                  "name": "Rutvik Jadhav"
+                },
+                "wa_id": "918265057464"
+              }
+            ],
+            "messages": [
+              {
+                "from": "918265057464",
+                "id": "wamid.HBgMOTE4MjY1MDU3NDY0FQIAEhggRjNDRTc5QTNEN0YwRTFERTQxMjZFMjNGOTFFREExNzcA",
+                "timestamp": "1735046854",
+                "text": {
+                  "body": "Hello"
+                },
+                "type": "text"
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+2024-12-24 18:57:35,452 - webhook.views - INFO - Received message from 918265057464: Hello at 2024-12-24 13:27:34
+2024-12-24 18:57:55,403 - webhook.views - INFO - Calling send_message function asynchronously
+2024-12-24 18:57:55,403 - webhook.views - INFO - Preparing to send message to: 918265057464
+2024-12-24 18:57:55,405 - webhook.service - INFO - Sending message to +918265057464: hii
+2024-12-24 18:57:55,938 - webhook.service - ERROR - Failed to send message: {"error":{"message":"Error validating access token: Session has expired on Tuesday, 24-Dec-24 04:00:00 PST. The current time is Tuesday, 24-Dec-24 05:27:55 PST.","type":"OAuthException","code":190,"error_subcode":463,"fbtrace_id":"As6Bsz4DZDf2mHE9bfxzm7k"}}
+2024-12-24 18:57:55,941 - webhook.views - ERROR - Failed to send message to 918265057464: {'error': {'message': 'Error validating access token: Session has expired on Tuesday, 24-Dec-24 04:00:00 PST. The current time is Tuesday, 24-Dec-24 05:27:55 PST.', 'type': 'OAuthException', 'code': 190, 'error_subcode': 463, 'fbtrace_id': 'As6Bsz4DZDf2mHE9bfxzm7k'}}
+2024-12-24 18:58:38,185 - webhook.views - INFO - Calling send_message function asynchronously
+2024-12-24 18:58:38,185 - webhook.views - INFO - Preparing to send message to: 918265057464
+2024-12-24 18:58:38,186 - webhook.service - INFO - Sending message to +918265057464: hii
+2024-12-24 18:58:39,239 - webhook.service - INFO - Message successfully sent to +918265057464
+2024-12-24 18:58:40,058 - webhook.views - INFO - Received message data: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "457525804121298",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15551828990",
+              "phone_number_id": "551602171364742"
+            },
+            "statuses": [
+              {
+                "id": "wamid.HBgMOTE4MjY1MDU3NDY0FQIAERgSQzNFMUIxQkZCMjU5MEZEMjFEAA==",
+                "status": "sent",
+                "timestamp": "1735046919",
+                "recipient_id": "918265057464",
+                "conversation": {
+                  "id": "6bf4c358fc3f286834e3d51b9b818bc1",
+                  "expiration_timestamp": "1735117800",
+                  "origin": {
+                    "type": "service"
+                  }
+                },
+                "pricing": {
+                  "billable": true,
+                  "pricing_model": "CBP",
+                  "category": "service"
+                }
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+2024-12-24 18:58:40,969 - webhook.views - INFO - Received message data: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "457525804121298",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15551828990",
+              "phone_number_id": "551602171364742"
+            },
+            "statuses": [
+              {
+                "id": "wamid.HBgMOTE4MjY1MDU3NDY0FQIAERgSQzNFMUIxQkZCMjU5MEZEMjFEAA==",
+                "status": "read",
+                "timestamp": "1735046919",
+                "recipient_id": "918265057464",
+                "conversation": {
+                  "id": "6bf4c358fc3f286834e3d51b9b818bc1",
+                  "origin": {
+                    "type": "service"
+                  }
+                },
+                "pricing": {
+                  "billable": true,
+                  "pricing_model": "CBP",
+                  "category": "service"
+                }
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+2024-12-24 18:58:53,636 - webhook.views - INFO - Calling send_message function asynchronously
+2024-12-24 18:58:53,637 - webhook.views - INFO - Preparing to send message to: 918265057464
+2024-12-24 18:58:53,638 - webhook.service - INFO - Sending message to +918265057464: hello
+2024-12-24 18:58:54,539 - webhook.service - INFO - Message successfully sent to +918265057464
+2024-12-24 18:58:55,321 - webhook.views - INFO - Received message data: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "457525804121298",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15551828990",
+              "phone_number_id": "551602171364742"
+            },
+            "statuses": [
+              {
+                "id": "wamid.HBgMOTE4MjY1MDU3NDY0FQIAERgSMjA2MjRFMERFMUUyQUJCMUNDAA==",
+                "status": "sent",
+                "timestamp": "1735046934",
+                "recipient_id": "918265057464",
+                "conversation": {
+                  "id": "6bf4c358fc3f286834e3d51b9b818bc1",
+                  "expiration_timestamp": "1735117800",
+                  "origin": {
+                    "type": "service"
+                  }
+                },
+                "pricing": {
+                  "billable": true,
+                  "pricing_model": "CBP",
+                  "category": "service"
+                }
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+2024-12-24 18:58:57,184 - webhook.views - INFO - Received message data: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "457525804121298",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15551828990",
+              "phone_number_id": "551602171364742"
+            },
+            "statuses": [
+              {
+                "id": "wamid.HBgMOTE4MjY1MDU3NDY0FQIAERgSMjA2MjRFMERFMUUyQUJCMUNDAA==",
+                "status": "read",
+                "timestamp": "1735046936",
+                "recipient_id": "918265057464",
+                "conversation": {
+                  "id": "6bf4c358fc3f286834e3d51b9b818bc1",
+                  "origin": {
+                    "type": "service"
+                  }
+                },
+                "pricing": {
+                  "billable": true,
+                  "pricing_model": "CBP",
+                  "category": "service"
+                }
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+2024-12-24 19:42:03,715 - webhook.views - INFO - Calling send_message function asynchronously
+2024-12-24 19:42:03,716 - webhook.views - INFO - Preparing to send message to: 918265057464
+2024-12-24 19:42:03,717 - webhook.service - INFO - Sending message to +918265057464: hello
+2024-12-24 19:42:04,790 - webhook.service - INFO - Message successfully sent to +918265057464
+2024-12-24 19:42:05,733 - webhook.views - INFO - Received message data: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "457525804121298",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15551828990",
+              "phone_number_id": "551602171364742"
+            },
+            "statuses": [
+              {
+                "id": "wamid.HBgMOTE4MjY1MDU3NDY0FQIAERgSNDgxRjI2RTk3REQ1OUZBNkUwAA==",
+                "status": "sent",
+                "timestamp": "1735049524",
+                "recipient_id": "918265057464",
+                "conversation": {
+                  "id": "6bf4c358fc3f286834e3d51b9b818bc1",
+                  "expiration_timestamp": "1735117800",
+                  "origin": {
+                    "type": "service"
+                  }
+                },
+                "pricing": {
+                  "billable": true,
+                  "pricing_model": "CBP",
+                  "category": "service"
+                }
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+2024-12-24 19:42:07,643 - webhook.views - INFO - Received message data: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "457525804121298",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15551828990",
+              "phone_number_id": "551602171364742"
+            },
+            "statuses": [
+              {
+                "id": "wamid.HBgMOTE4MjY1MDU3NDY0FQIAERgSNDgxRjI2RTk3REQ1OUZBNkUwAA==",
+                "status": "delivered",
+                "timestamp": "1735049526",
+                "recipient_id": "918265057464",
+                "conversation": {
+                  "id": "6bf4c358fc3f286834e3d51b9b818bc1",
+                  "origin": {
+                    "type": "service"
+                  }
+                },
+                "pricing": {
+                  "billable": true,
+                  "pricing_model": "CBP",
+                  "category": "service"
+                }
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+2024-12-24 20:00:06,816 - webhook.views - INFO - Token Sent: None, Challenge: None
+2024-12-24 20:00:06,816 - webhook.views - ERROR - Token mismatch or missing.
+2024-12-24 20:02:57,352 - webhook.views - INFO - Token Sent: None, Challenge: None
+2024-12-24 20:02:57,354 - webhook.views - ERROR - Token mismatch or missing.
+2024-12-24 20:02:57,362 - webhook.views - INFO - Received message data: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "457525804121298",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15551828990",
+              "phone_number_id": "551602171364742"
+            },
+            "statuses": [
+              {
+                "id": "wamid.HBgMOTE4MjY1MDU3NDY0FQIAERgSMzRFNjc5OTc3RUZENTA2NUJBAA==",
+                "status": "sent",
+                "timestamp": "1735035178",
+                "recipient_id": "918265057464",
+                "conversation": {
+                  "id": "6bf4c358fc3f286834e3d51b9b818bc1",
+                  "expiration_timestamp": "1735117800",
+                  "origin": {
+                    "type": "service"
+                  }
+                },
+                "pricing": {
+                  "billable": true,
+                  "pricing_model": "CBP",
+                  "category": "service"
+                }
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+2024-12-24 20:06:44,931 - webhook.views - INFO - Token Sent: None, Challenge: None
+2024-12-24 20:06:44,932 - webhook.views - ERROR - Token mismatch or missing.
+2024-12-24 20:06:44,941 - webhook.views - INFO - Received message data: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "457525804121298",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15551828990",
+              "phone_number_id": "551602171364742"
+            },
+            "statuses": [
+              {
+                "id": "wamid.HBgMOTE4MjY1MDU3NDY0FQIAERgSMzRFNjc5OTc3RUZENTA2NUJBAA==",
+                "status": "sent",
+                "timestamp": "1735035178",
+                "recipient_id": "918265057464",
+                "conversation": {
+                  "id": "6bf4c358fc3f286834e3d51b9b818bc1",
+                  "expiration_timestamp": "1735117800",
+                  "origin": {
+                    "type": "service"
+                  }
+                },
+                "pricing": {
+                  "billable": true,
+                  "pricing_model": "CBP",
+                  "category": "service"
+                }
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+2024-12-24 20:07:27,035 - webhook.views - INFO - Token Sent: None, Challenge: None
+2024-12-24 20:07:27,036 - webhook.views - ERROR - Token mismatch or missing.
+2024-12-24 20:07:27,043 - webhook.views - INFO - Received message data: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "457525804121298",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15551828990",
+              "phone_number_id": "551602171364742"
+            },
+            "statuses": [
+              {
+                "id": "wamid.HBgMOTE4MjY1MDU3NDY0FQIAERgSMzRFNjc5OTc3RUZENTA2NUJBAA==",
+                "status": "sent",
+                "timestamp": "1735035178",
+                "recipient_id": "918265057464",
+                "conversation": {
+                  "id": "6bf4c358fc3f286834e3d51b9b818bc1",
+                  "expiration_timestamp": "1735117800",
+                  "origin": {
+                    "type": "service"
+                  }
+                },
+                "pricing": {
+                  "billable": true,
+                  "pricing_model": "CBP",
+                  "category": "service"
+                }
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+2024-12-24 20:11:00,792 - webhook.views - INFO - Token Sent: None, Challenge: None
+2024-12-24 20:11:00,793 - webhook.views - ERROR - Token mismatch or missing.
+2024-12-24 20:12:42,381 - webhook.views - INFO - Token Sent: None, Challenge: None
+2024-12-24 20:12:42,381 - webhook.views - ERROR - Token mismatch or missing.
+2024-12-24 20:12:42,389 - webhook.views - INFO - Received message data: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "457525804121298",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15551828990",
+              "phone_number_id": "551602171364742"
+            },
+            "statuses": [
+              {
+                "id": "wamid.HBgMOTE4MjY1MDU3NDY0FQIAERgSMzRFNjc5OTc3RUZENTA2NUJBAA==",
+                "status": "sent",
+                "timestamp": "1735035178",
+                "recipient_id": "918265057464",
+                "conversation": {
+                  "id": "6bf4c358fc3f286834e3d51b9b818bc1",
+                  "expiration_timestamp": "1735117800",
+                  "origin": {
+                    "type": "service"
+                  }
+                },
+                "pricing": {
+                  "billable": true,
+                  "pricing_model": "CBP",
+                  "category": "service"
+                }
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+2024-12-24 20:12:42,395 - webhook.views - INFO - Calling send_message function asynchronously
+2024-12-24 20:12:42,395 - webhook.views - INFO - Preparing to send message to: 918265057464
+2024-12-24 20:12:42,396 - webhook.service - INFO - Sending message to 918265057464: hello
+2024-12-24 20:12:43,668 - webhook.service - INFO - Message successfully sent to 918265057464
+2024-12-24 20:13:24,936 - webhook.views - INFO - Token Sent: None, Challenge: None
+2024-12-24 20:13:24,936 - webhook.views - ERROR - Token mismatch or missing.
+2024-12-24 20:13:24,945 - webhook.views - INFO - Received message data: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "457525804121298",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15551828990",
+              "phone_number_id": "551602171364742"
+            },
+            "statuses": [
+              {
+                "id": "wamid.HBgMOTE4MjY1MDU3NDY0FQIAERgSMzRFNjc5OTc3RUZENTA2NUJBAA==",
+                "status": "sent",
+                "timestamp": "1735035178",
+                "recipient_id": "918265057464",
+                "conversation": {
+                  "id": "6bf4c358fc3f286834e3d51b9b818bc1",
+                  "expiration_timestamp": "1735117800",
+                  "origin": {
+                    "type": "service"
+                  }
+                },
+                "pricing": {
+                  "billable": true,
+                  "pricing_model": "CBP",
+                  "category": "service"
+                }
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+2024-12-24 20:13:24,951 - webhook.views - INFO - Calling send_message function asynchronously
+2024-12-24 20:13:24,951 - webhook.views - INFO - Preparing to send message to: 918265057464
+2024-12-24 20:13:24,951 - webhook.service - INFO - Sending message to 918265057464: hello
+2024-12-24 20:13:25,821 - webhook.service - INFO - Message successfully sent to 918265057464
+2024-12-24 20:17:12,605 - webhook.views - INFO - Token Sent: None, Challenge: None
+2024-12-24 20:17:12,606 - webhook.views - ERROR - Token mismatch or missing.
+2024-12-24 20:17:12,614 - webhook.views - INFO - Received message data: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "457525804121298",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15551828990",
+              "phone_number_id": "551602171364742"
+            },
+            "statuses": [
+              {
+                "id": "wamid.HBgMOTE4MjY1MDU3NDY0FQIAERgSMzRFNjc5OTc3RUZENTA2NUJBAA==",
+                "status": "sent",
+                "timestamp": "1735035178",
+                "recipient_id": "918265057464",
+                "conversation": {
+                  "id": "6bf4c358fc3f286834e3d51b9b818bc1",
+                  "expiration_timestamp": "1735117800",
+                  "origin": {
+                    "type": "service"
+                  }
+                },
+                "pricing": {
+                  "billable": true,
+                  "pricing_model": "CBP",
+                  "category": "service"
+                }
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+2024-12-24 20:17:12,622 - webhook.views - INFO - Calling send_message function asynchronously
+2024-12-24 20:17:12,622 - webhook.views - INFO - Preparing to send message to: 918265057464
+2024-12-24 20:17:12,622 - webhook.service - INFO - Sending message to 918265057464: hello
+2024-12-24 20:17:13,707 - webhook.service - INFO - Message successfully sent to 918265057464

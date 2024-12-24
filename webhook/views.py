@@ -99,8 +99,8 @@ async def webhook(request):
                                 content=message_body,
                                 timestamp=dt_object,
                                 mobile_no=sender,
+                                status="Received"
                             )
-
                         # Log the incoming message details
                         logger.info(f"Received message from {sender}: {message_body} at {dt_object}")
 
@@ -119,13 +119,8 @@ import asyncio
 @csrf_exempt
 async def reply_to_user(request):
     try:
-        # Parse incoming JSON data
-        data = json.loads(request.body.decode('utf-8'))
-        print(data)
-        
-        # Get mobile numbers and message from the incoming data
-        mobile_no_list = data.get('mobile', '').split(",")  # Split the comma-separated list
-        msg = data.get('msg', '')
+        mobile_no_list = request.POST.getlist('mobile')  # Get selected mobile numbers as a list
+        msg = request.POST.get('msg')
 
     except Exception as e:
         return JsonResponse({"error": str(e)}, status=400)
@@ -149,10 +144,6 @@ async def reply_to_user(request):
         for mobile_no in mobile_no_list:
             mobile_no = mobile_no.strip()  # Remove any extra spaces or characters
             logger.info(f"Preparing to send message to: {mobile_no}")
-            
-            # Make sure the phone number includes the country code (e.g., +91 for India)
-            if not mobile_no.startswith('+'):
-                mobile_no = '+' + mobile_no
 
             # Add each task to the list
             tasks.append(whatsapp_service.send_message(mobile_no, msg))
@@ -174,7 +165,7 @@ async def reply_to_user(request):
         return JsonResponse({"error": str(e)}, status=500)
 
 
-
+@api_view(["GET"])
 def admin_interface(request):
     messages = Message.objects.all()
     msg = []
@@ -185,7 +176,7 @@ def admin_interface(request):
             "receiver": message.receiver,
             "content": message.content,
             "timestamp": message.timestamp,
-            "status": True,
+            "status": message.status,
         }
         msg.append(msg1)
         if message.mobile_no:
