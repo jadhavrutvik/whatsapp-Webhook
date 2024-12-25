@@ -7676,3 +7676,201 @@ ky hoty msg kela tr
     }
   ]
 }
+2024-12-25 12:51:00,763 - webhook.views - INFO - Received message data: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "457525804121298",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15551828990",
+              "phone_number_id": "551602171364742"
+            },
+            "statuses": [
+              {
+                "id": "wamid.HBgMOTE4MjY1MDU3NDY0FQIAERgSNTJFNjQ1QUQyNjBGQjZCOURDAA==",
+                "status": "sent",
+                "timestamp": "1735111231",
+                "recipient_id": "918265057464",
+                "conversation": {
+                  "id": "6bf4c358fc3f286834e3d51b9b818bc1",
+                  "expiration_timestamp": "1735117800",
+                  "origin": {
+                    "type": "service"
+                  }
+                },
+                "pricing": {
+                  "billable": true,
+                  "pricing_model": "CBP",
+                  "category": "service"
+                }
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+2024-12-25 12:51:03,216 - webhook.views - INFO - Received message data: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "457525804121298",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15551828990",
+              "phone_number_id": "551602171364742"
+            },
+            "statuses": [
+              {
+                "id": "wamid.HBgMOTE4MjY1MDU3NDY0FQIAERgSNTJFNjQ1QUQyNjBGQjZCOURDAA==",
+                "status": "delivered",
+                "timestamp": "1735111232",
+                "recipient_id": "918265057464",
+                "conversation": {
+                  "id": "6bf4c358fc3f286834e3d51b9b818bc1",
+                  "origin": {
+                    "type": "service"
+                  }
+                },
+                "pricing": {
+                  "billable": true,
+                  "pricing_model": "CBP",
+                  "category": "service"
+                }
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+2024-12-25 12:52:17,863 - webhook.views - INFO - Received message data: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "457525804121298",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15551828990",
+              "phone_number_id": "551602171364742"
+            },
+            "statuses": [
+              {
+                "id": "wamid.HBgMOTE4MjY1MDU3NDY0FQIAERgSMkExMjdBMkI4OTBDOEVCMjlBAA==",
+                "status": "sent",
+                "timestamp": "1735110909",
+                "recipient_id": "918265057464",
+                "conversation": {
+                  "id": "6bf4c358fc3f286834e3d51b9b818bc1",
+                  "expiration_timestamp": "1735117800",
+                  "origin": {
+                    "type": "service"
+                  }
+                },
+                "pricing": {
+                  "billable": true,
+                  "pricing_model": "CBP",
+                  "category": "service"
+                }
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+2024-12-25 12:57:02,552 - webhook.views - INFO - Received message data: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "457525804121298",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15551828990",
+              "phone_number_id": "551602171364742"
+            },
+            "statuses": [
+              {
+                "id": "wamid.HBgMOTE4MjY1MDU3NDY0FQIAERgSQjcyRTM5OUEyODUxQjExNTkzAA==",
+                "status": "delivered",
+                "timestamp": "1735111216",
+                "recipient_id": "918265057464",
+                "conversation": {
+                  "id": "6bf4c358fc3f286834e3d51b9b818bc1",
+                  "origin": {
+                    "type": "service"
+                  }
+                },
+                "pricing": {
+                  "billable": true,
+                  "pricing_model": "CBP",
+                  "category": "service"
+                }
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+2024-12-25 12:57:53,951 - webhook.views - INFO - Received message data: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "457525804121298",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15551828990",
+              "phone_number_id": "551602171364742"
+            },
+            "statuses": [
+              {
+                "id": "wamid.HBgMOTE4MjY1MDU3NDY0FQIAERgSQjcyRTM5OUEyODUxQjExNTkzAA==",
+                "status": "sent",
+                "timestamp": "1735111214",
+                "recipient_id": "918265057464",
+                "conversation": {
+                  "id": "6bf4c358fc3f286834e3d51b9b818bc1",
+                  "expiration_timestamp": "1735117800",
+                  "origin": {
+                    "type": "service"
+                  }
+                },
+                "pricing": {
+                  "billable": true,
+                  "pricing_model": "CBP",
+                  "category": "service"
+                }
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
