@@ -2,10 +2,9 @@ import json
 import logging
 import os
 from datetime import datetime
-from functools import wraps
 from django.http import JsonResponse, HttpResponse
 from django.views.decorators.csrf import csrf_exempt
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 from rest_framework.response import Response
 from webhook.models import Message
 from rest_framework.decorators import api_view
@@ -73,6 +72,7 @@ async def webhook(request):
                         sender = msg.get('from')  # Sender's phone number
                         message_body = msg.get('text', {}).get('body')  # Message content
                         timestamp = msg.get('timestamp')  # Message timestamp (UNIX)
+
                         dt_object = datetime.utcfromtimestamp(int(timestamp))  # Convert to datetime
 
                         exists = await asyncio.to_thread(
@@ -88,6 +88,7 @@ async def webhook(request):
                                 receiver=sender,
                                 content=message_body,
                                 timestamp=dt_object,
+                                status="Received",
                                 mobile_no=None,  # Nullify mobile_no to avoid duplication
                             )
                         else:
@@ -104,7 +105,7 @@ async def webhook(request):
                         # Log the incoming message details
                         logger.info(f"Received message from {sender}: {message_body} at {dt_object}")
 
-            return JsonResponse({"status": "success"})
+            return redirect("/")
 
         except Exception as e:
             logger.exception("Error processing incoming message.")
@@ -159,7 +160,9 @@ async def reply_to_user(request):
                 return JsonResponse({"status": "failed", "mobile_no": mobile_no, "error": response}, status=500)
 
         # If all messages are successfully sent, return a success response
-        return JsonResponse({"status": "success", "message": "Messages sent successfully."})
+        # return JsonResponse({"status": "success", "message": "Messages sent successfully."})
+        return redirect("/")
+    
 
     except Exception as e:
         return JsonResponse({"error": str(e)}, status=500)
@@ -183,3 +186,118 @@ def admin_interface(request):
             mobile_dict={"mobile_no": message.mobile_no}
             mobile_list.append(mobile_dict)
     return render(request, "admin_interface.html", {"messages": msg,"mobile_dict":mobile_list})
+
+
+# import asyncio
+# from django.views.decorators.csrf import csrf_exempt
+# from django.http import JsonResponse,HttpResponse
+# from datetime import datetime
+# from webhook.service1 import WhatsappSevice
+
+
+# @csrf_exempt
+# async def webhook(request):
+#     if request.method=="GET":
+#         token_verify=request.GET.get("hub.token_verify")
+#         challenge=request.GET.get("hub.challenge")
+
+#         if token_verify==VERIFY_TOKEN:
+#             return HttpResponse(challenge)
+
+#         else:
+#             return HttpResponse("token are invalid or mismatch",status=403)
+
+#     elif request.method=="POST":
+#         try:
+#             data=json.load(request.body.decode("utf-8"))
+
+#             for entry in data.get('entry', []):
+#                     for change in entry.get('changes', []):
+#                         messages = change['value'].get('messages', [])
+#                         for msg in messages:
+#                             sender = msg.get('from')  # Sender's phone number
+#                             message_body = msg.get('text', {}).get('body')  # Message content
+#                             timestamp = msg.get('timestamp')  # Message timestamp (UNIX)
+
+#                             dt_object=datetime.utcfromtimestamp(int(timestamp))
+
+#                             exists=await asyncio.to_thread(
+#                                 Message.objects.filter(mobile_no=sender).exists()
+
+#                             )
+
+#                             if exists:
+#                                 await asyncio.to_thread(
+#                                     sender="Rutvik",
+#                                     receiver=sender,
+#                                     content=message_body,
+#                                     status="Received",
+#                                     mobile_no=None,
+#                                     timestamp=dt_object                                
+#                                 )
+#                             else:
+#                                     await asyncio.to_thread(
+#                                     sender="Rutvik",
+#                                     receiver=sender,
+#                                     content=message_body,
+#                                     status="Received",
+#                                     mobile_no=sender,
+#                                     timestamp=dt_object   
+#                                 )
+#             return JsonResponse({"status":"success"})    
+#         except Exception as e:
+#             return JsonResponse({"status":"error","message":str(e)},status=400)
+#     return HttpResponse("invalid method",status=403)
+
+
+
+# @csrf_exempt
+# async def reply_to_user(request):
+#     if request.method=="POST":
+#         try:
+#             mobile_no=request.POST.getlist("mobile")
+#             message=request.POST.get("msg")
+
+#             if not mobile_no or not message:
+#                 return JsonResponse({"status":"error","message":"mobile no and msg required!"})
+            
+#         except Exception as e:
+#             JsonResponse({"status":"error","message":str(e)})
+#         whats_app=WhatsAppService()
+#         try:
+#             task=[]
+#             for mobile in mobile_no:
+                
+#                 mobile=mobile.strip()
+
+#                 task.append(whats_app.send_message(mobile,message))
+
+#             result= await asyncio.gather(*task)
+
+#             for result, mobile_no in zip(result,mobile_no):
+#                 success,data=result
+#                 if not success:
+#                     return JsonResponse({"status":"error","mobile no":mobile_no,"message":str(e)})
+#             return redirect("admin_interface")
+#         except Exception as e:
+#             return JsonResponse({"status":"error","message":str(e)})
+
+
+
+
+# @api_view("GET")
+# def admin_interface(request):
+#     data=Message.objects.all()
+    
+#     for message in data:
+
+
+
+
+
+
+
+
+
+
+
